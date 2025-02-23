@@ -2,6 +2,7 @@
 import rospy
 from my_srv.srv import Average, AverageResponse
 
+# the service function that calculates the average of two numbers
 def averageTwoNum(req):
     value = (req.num1+req.num2)/2.0
     return AverageResponse(value)
