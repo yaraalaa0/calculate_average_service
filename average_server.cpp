@@ -1,7 +1,7 @@
 #include "ros/ros.h"
-#include "test_my_srv/Average.h"
+#include "my_srv/Average.h"
 
-bool averageTwoNum(test_my_srv::Average::Request &req, test_my_srv::Average::Response &res){
+bool averageTwoNum(my_srv::Average::Request &req, my_srv::Average::Response &res){
     res.result= (req.num1+req.num2)/2.0;
     return true;
 }
